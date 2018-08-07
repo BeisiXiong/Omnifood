@@ -35,7 +35,7 @@
         margin-left: 0%;
     }
     .plan-price{ font-size: 250%; }
-    .content-form { width:80%; }
+    .content-form { width:90%; }
 }
 
 /* small phones to small tablets: from 481px to 767px */
@@ -47,8 +47,37 @@
     .col { width: 100%;
           margin: 0 0 4% 0%;
     }
-    .main-nav { display: none;}
-    .works-step { margin-bottom:40px;}
+    
+    .main-nav { display: none;} 
+    
+    .mobile-nav-icon {display: inline-block;}
+    .main-nav {
+        float: left;
+        margin-top: 35px;
+        margin-left: 25px;
+    }
+    
+    .main-nav li{
+        display: block;
+    }
+    
+    .main-nav li a:link,
+    .main-nav li a:visited{
+        display: block;
+        border: 0;
+        padding: 10px 0;
+        font-size: 100%;
+    }
+    
+
+    .sticky .main-nav { margin-top: 10px; }
+
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited { padding:10px 0; }
+    .sticky .mobile-nav-icon i {margin-top: 10px;}
+    .sticky .mobile-nav-icon i {color: #555;}
+    
+    
 
     h1 { font-size: 180%;}
     h2 { font-size: 150%;}
@@ -58,7 +87,8 @@
     }
 
     .app-screen{ width:40%;}
-    .steps-box{text-align: center;}
+    .steps-box:first-child {text-align: center;}
+    
     .works-step div {
         height: 40px;
         width: 40px;
@@ -66,9 +96,31 @@
         margin-right: 15px;
         font-size: 120%;
     }
+    .works-step { margin-bottom:20px;}
+    .word-step:last-of-type{ margin-bottom: 20px;}
+    
+.map-box{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.map{
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+
+.form-box{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 30px 0;
+}
 
     
 }
+
 
 
 /* small phones: from 0 to 480px */
